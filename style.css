@@ -7,13 +7,16 @@
 .maincontainer {
   height: max-content;
   background-color: black;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .headerbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 70px;
+  width: 100%;
+  height: 150px;
   background-color: black;
 }
 
@@ -24,10 +27,14 @@
   user-select: none;
 }
 .customdropdown {
-  border-radius: 20px;
+  border-radius: 40px;
   background: none;
   border: 2px solid white;
+  padding: 20px;
   color: #fff;
+}
+.customdropdown:focus {
+  box-shadow: none;
 }
 .btn:hover {
   color: #fff;
@@ -36,8 +43,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
-  width: 100%;
+  height: fit-content;
   background-color: black;
   padding-top: 20px;
 }
